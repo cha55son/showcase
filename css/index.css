@@ -1,0 +1,10 @@
+.impress-supported .fallback-message {
+    display: none;
+}
+
+#video {
+    border: 2px solid black;
+}
+#video-canvas {
+    border: 2px solid black;
+}

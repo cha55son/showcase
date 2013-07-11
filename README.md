@@ -1,4 +1,4 @@
-resume
+Showcase
 ======
 
-My Professional Resume
+My Professional Showcase
