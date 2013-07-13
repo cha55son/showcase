@@ -1,0 +1,60 @@
+@import "../vendors/less-elements/elements.less";
+@import "..//vendors/bootstrap/less/bootstrap.less";
+@import "variables.less";
+@import "../vendors/bootstrap/less/utilities.less";
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+    font-size: 30px;
+    line-height: 1.5;
+    .box-sizing(border-box);
+
+    .impress-enabled & {
+        margin: 0;
+        opacity: 0.3;
+
+        .transition-duration(0.2s);
+    }
+    .impress-enabled &.active { opacity: 1 }
+}
+
+/*========================================== 
+    Enable some stuff if impress supported
+==========================================*/
+.impress-supported {
+    & .fallback-message { display: none; }
+}
+
+/*============================= 
+    Start the slide styles
+=============================*/
+#start {
+
+    &.active .welcome-banner {
+        .transition(1s, ease-out);
+        transition-property: left;
+        left: 0;
+    }
+    .welcome-banner {
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        position: relative;
+        left: 100%;
+    }
+    @imgHeight: 500px;
+    .thumbnail { height: @imgHeight; width: @imgHeight * 0.75 }
+}
+
+#guestbook {
+
+    .video {
+        border: 2px solid black;
+    }
+    .video-canvas {
+        border: 2px solid black;
+    }
+}

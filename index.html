@@ -7,35 +7,51 @@
         <title>Showcase | Chason Choate</title>
         <meta name="author" content="Chason Choate" />
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet/less" type="text/css" href="/css/index.less" />
+        <script src="/js/less.js"></script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="js/index.js"></script>
         <!-- Impress loaded at the bottom -->
     </head>
     <body class="impress-not-supported">
-        <div class="fallback-message">
+        <div class="fallback-message alert alert-warning">
             <p>Your browser <b>doesn't support the features required</b> by impress.js, 
             so you are presented with a simplified version of this presentation.</p>
             <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> 
             or <b>Firefox</b> browser.</p>
         </div>
+
         <div id="impress">
-            <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-                <video id="video" width="640" height="480" autoplay></video>
-                <button id="snap" class="btn">Snap Photo</button>
-                <canvas id="video-canvas" width="640" height="480"></canvas>
+            <div id="start" class="step slide" data-x="0" data-y="0">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <h1 class="welcome-banner">Welcome!</h1>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <div class="thumbnail">
+                            <img src="/img/chason-koree.jpg" alt="Koree Beth and I" />
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <p>
+                            My name is <strong>Chason Choate</strong>. I assume you are here
+                            to learn some more about me? Well with this presentation I hope to 
+                            steal your <sub>developer</sub> heart away!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="guestbook" class="step slide" data-x="1000" data-y="1000">
+                <video class="video" width="640" height="480" autoplay></video>
+                <button class="snap" class="btn">Snap Photo</button>
+                <canvas class="video-canvas" width="640" height="480"></canvas>
             </div>
         </div>
-        <div class="hint">
-            <p>Use a spacebar or arrow keys to navigate</p>
-        </div>
-        <script>
-        if ("ontouchstart" in document.documentElement) { 
-            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-        }
-        </script>
+
         <script src="//cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
     </body>
 </html>
