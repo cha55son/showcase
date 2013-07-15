@@ -34,7 +34,7 @@
 #start {
 
     /* Stuff that happens when the slide is active */
-    &.active {
+    &.active, &.past {
         .thumbnail {
             .transform(rotateY(30deg)) 
         }
@@ -70,6 +70,14 @@
     }
     @imgHeight: 500px;
     .thumbnail { height: @imgHeight; width: @imgHeight * 0.75 }
+}
+
+#solarsystem {
+    
+    iframe {
+        height: 500px;
+        width: 500px;
+    }
 }
 
 #guestbook {
