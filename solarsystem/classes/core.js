@@ -79,6 +79,7 @@ window.Game = Base.extend({
 			};
 		}
 
+        $('#canvas').css('background-color', 'black');
 		this.renderer.setSize(this.settings.width, this.settings.height);
 		if (!this.camera)
 			this.camera = new THREE.PerspectiveCamera(this.settings.viewAngle, this.settings.aspect, this.settings.near, this.settings.far);
