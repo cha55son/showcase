@@ -1,7 +1,5 @@
 @import "../vendors/less-elements/elements.less";
-@import "..//vendors/bootstrap/less/bootstrap.less";
-@import "variables.less";
-@import "../vendors/bootstrap/less/utilities.less";
+@import "bootstrap.slate.css";
 
 .step {
     position: relative;
@@ -48,7 +46,7 @@
 #start {
 
     /* Stuff that happens when the slide is active */
-    &.active, &.past {
+    &.active {
         .thumbnail {
             .transform(rotateY(30deg)) 
         }
@@ -89,7 +87,7 @@
 #school {
 
     img {
-        height: 350px;
+        height: 275px;
     }
     .ttu-thumbnail {
         .transform(rotateY(-30deg));
@@ -102,6 +100,26 @@
     }
 }
 
+#post-graduation {
+    
+    &.active {
+
+        .stack {
+            .transition(3s, ease-out);
+            transition-property: width;
+            width: 100%;
+        }
+    }
+
+    .stack {
+        background-image: url('/img/full-stack.png');
+        background-repeat: no-repeat;
+        background-position: center; 
+        height: 191px;
+        width: 0;
+    }
+}
+
 #solarsystem {
     
     iframe {
@@ -109,6 +127,7 @@
         float: left;
         height: 500px;
         width: 500px;
+        border: none;
     }
 }
 
