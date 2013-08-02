@@ -1,6 +1,6 @@
 [submodule "vendors/bootstrap"]
 	path = vendors/bootstrap
-	url = https://github.com/twitter/bootstrap.git
+	url = https://github.com/twbs/bootstrap.git
 [submodule "vendors/less-elements"]
 	path = vendors/less-elements
 	url = https://github.com/dmitryf/elements.git
