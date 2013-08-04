@@ -25,7 +25,6 @@
     & .fallback-message { display: none; }
     & .progress-wrapper { display: block; }
 }
-
 .progress-wrapper {
     display: none;
     position: fixed;
@@ -38,6 +37,16 @@
         margin-right: 2px;
         margin-top: 1px;
     }
+}
+.hint {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 40px;
+    opacity: 0.5;
+    display: none;
 }
 
 /*============================= 
@@ -89,6 +98,9 @@
     img {
         height: 275px;
     }
+    .caption {
+        text-align: center;
+    }
     .ttu-thumbnail {
         .transform(rotateY(-30deg));
 
@@ -100,7 +112,7 @@
     }
 }
 
-#post-graduation {
+#current-skills {
     
     &.active {
 
@@ -110,13 +122,19 @@
             width: 100%;
         }
     }
-
     .stack {
         background-image: url('/img/full-stack.png');
         background-repeat: no-repeat;
         background-position: center; 
         height: 191px;
         width: 0;
+    }
+    h3 {
+        border-bottom: 2px solid;
+    }
+    li {
+        line-height: 30px;
+        font-size: 15px;
     }
 }
 

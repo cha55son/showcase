@@ -11,4 +11,9 @@ $(document).ready(function() {
         solarsystemStep.height($(window).height())
                        .width($(window).width());
     });
+
+    // Toggle instructions
+    $('#start').on('impress:stepenter impress:stepleave', function() {
+        $('.hint').fadeToggle();
+    });
 });
