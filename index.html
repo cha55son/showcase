@@ -15,7 +15,6 @@
         <script src="vendors/bootstrap/js/bootstrap-modal.js"></script>
         <script src="js/index.js"></script>
         <script src="js/progress.js"></script>
-        <script src="js/guestbook.js"></script>
         <!-- Impress loaded at the bottom -->
 
         <script>
@@ -79,9 +78,6 @@
                         <a href="http://tntech.edu" target="_blank">TTU</a>.
                         <div class="thumbnail">
                             <img src="/img/clemson.jpg" alt="Me at Clemson" />
-                            <div class="caption">
-                                <p>Pitching at Clemson</p>
-                            </div>
                         </div>
                     </div>
                     <div class="span6">
@@ -141,7 +137,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="stack"></div>
                     </div>
                 </div>
             </div>
@@ -161,7 +156,7 @@
                             as <a href="http://en.wikipedia.org/wiki/DevOps">dev ops</a>. My workflow
                             started with the core code to the scripts that package releases and everything in between.
                             One of the heart pounding system admin moments i've had was swapping out a live production
-                            server for <a href="http://renderosity.com">Renderosity</a> which serves thousands
+                            database server for <a href="http://renderosity.com">Renderosity</a> which serves thousands
                             of users at any given time.
                         </p>
                     </div>
@@ -266,33 +261,47 @@
                 </div>
             </div>
 
-            <div id="guestbook" class="step slide" data-x="0" data-y="1000">
+            <div id="raspi-ardu" class="step slide" data-x="14000" data-y="0">
                 <div class="row-fluid">
-                    <div class="span6">
+                    <div class="span12">
                         <div class="page-header">
-                            <h1>Guestbook</h1>
+                            <h1>Raspberry Pi / Arduino</h1>
                         </div>
-                        <div class="guest-post">
-                            <div class="guest-img pull-left">
-                                <img src="img/guests/testing.jpg" alt="guest name" />
+                        <div class="row-fluid">
+                            <div class="span8">
+                                I recently obtained a Raspberry Pi and arduino board.
+                                Having the two
+                                devices makes you feel like a mad scientist, mixing the two in ways to 
+                                create whatever you want.                             
+                                I've already setup a home monitoring system,
+                                as well as a puppy motion detection system.
                             </div>
-                            <div class="guest-name">Testing Name</div>
-                            <div class="guest-date">August 4th, 2013</div>
-                            <div class="guest-comment">Hi there this is a test of the emergency broadcast system</div>
+                            <div class="span4">
+                                <div class="thumbnail">
+                                    <img src="img/raspi.jpg" alt="Raspberry Pi" /> 
+                                </div>
+                                <div class="thumbnail">
+                                    <img src="img/arduino.jpg" alt="Arduino" /> 
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="span6" style="text-align: center">
-                        <div class="guest-video-wrapper">
-                            <div class="video-underlay">
-                                Click below to activate the camera, <br />
-                                then you must allow the browser <br />
-                                to access your webcam
-                            </div>
-                            <video id="guest-video" width="400" height="320" autoplay>
-                                Your browser does not support the video tag. 
-                            </video>
+                </div>
+            </div>
+
+            <div id="thanks" class="step slide" data-x="-2000" data-y="0">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="page-header">
+                            <h1>Thanks for your interest!</h1>
                         </div>
-                        <a id="guest-snap" href="#" class="btn btn-large">Activate Camera</a>
+                        <p>
+                            Feel free to email me anytime, you can find my contact info
+                            on my resume <a href="http://chasonchoate.com/resume">chasonchoate.com/resume</a>.
+                            <br />
+                            I hope you enjoyed this presentation as much as I did creating it.
+                            Thanks again for your interest!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -302,61 +311,26 @@
                     <h1>This showcase was built with <small>Besides the obvious</small></h1>
                 </div>
                 <ul class="thumbnails">
-                    <li class="span2">
-                        <div class="thumbnail">
-                            <img src="/img/jquery.jpg" alt="jQuery" />
-                            <p>jQuery</p>
-                        </div>
+                    <li>
+                    <a href="https://github.com/bartaz/impress.js/">ImpressJS</a>
                     </li>
-                    <li class="span2">
-                        <div class="thumbnail">
-                            <img src="/img/less.png" alt="Less" />
-                            <p>Less</p>
-                        </div>
+                    <li>
+                        <a href="http://jquery.com/"><img src="/img/jquery.jpg" alt="jQuery" /></a>
                     </li>
-                    <li class="span2">
-                        <div class="thumbnail">
-                            <img src="/img/git.jpeg" alt="Git" />
-                            <p>Git</p>
-                        </div>
+                    <li>
+                        <a href="http://lesscss.org/"><img src="/img/less.png" alt="Less" /></a>
+                    </li>
+                    <li>
+                        <a href="http://git-scm.com/"><img src="/img/git.jpeg" alt="Git" /></a>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/2.3.2/">Bootstrap</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="hint">
             <p>Use a spacebar or arrow keys to navigate</p>
-        </div>
-        <div id="guest-modal" class="modal hide fade">
-            <form class="form-horizontal" action="php/guest-post.php" method="POST" style="margin-bottom: 0">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h3>Modal header</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="control-group">
-                        <label class="control-label">Preview</label>
-                        <div class="controls">
-                            <canvas id="guest-preview" width="220" height="176"></canvas>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">Name</label>
-                        <div class="controls">
-                            <input type="text" name="guest-name" placeholder="Your Name" />
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">Message</label>
-                        <div class="controls">
-                            <textarea name="guest-msg" placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn" data-dismiss="modal">Cancel</a>
-                    <button type="submit" class="btn btn-primary">Post</button>
-                </div>
-            </form>
         </div>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>

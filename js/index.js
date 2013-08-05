@@ -16,4 +16,10 @@ $(document).ready(function() {
     $('#start').on('impress:stepenter impress:stepleave', function() {
         $('.hint').fadeToggle();
     });
+
+    // Open all links in a new window
+    $('a').click(function() {
+        window.open($(this).attr('href'), "_blank");
+        return false;
+    });
 });
