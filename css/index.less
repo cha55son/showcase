@@ -1,6 +1,22 @@
 @import "../vendors/less-elements/elements.less";
 @import "bootstrap.slate.css";
 
+.modal-header {
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    background-color: #272B30;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-body {
+    border-top: 1px solid #1C1E22;
+}
+
 .step {
     position: relative;
     width: 900px;
@@ -153,6 +169,10 @@
 
 #solarsystem {
     
+    .solar-commander-video {
+        display: block;
+        margin: auto;
+    }
     iframe {
         position: absolute;
         float: left;
@@ -164,11 +184,31 @@
 
 #guestbook {
 
-    .video {
-        border: 2px solid black;
+    #guest-video {
+        border: 1px solid black;
+        position: relative;
     }
-    .video-canvas {
-        border: 2px solid black;
+    #guest-snap {
+        width: 300px;    
+    }
+    .guest-video-wrapper {
+        position: relative;
+    }
+    .video-underlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+        padding: 100px 20px 0 20px;
+        text-align: center;
+    }
+}
+
+#guest-modal {
+    
+    #guest-preview {
+
     }
 }
 

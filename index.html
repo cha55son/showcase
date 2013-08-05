@@ -9,10 +9,13 @@
 
         <link rel="stylesheet/less" type="text/css" href="/css/index.less" />
         <script src="/js/less.js"></script>
+        <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css" />
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap-modal.js"></script>
         <script src="js/index.js"></script>
         <script src="js/progress.js"></script>
+        <script src="js/guestbook.js"></script>
         <!-- Impress loaded at the bottom -->
 
         <script>
@@ -96,17 +99,18 @@
                             <h1>Current Skills</h1>
                         </div>
                         <div class="well">
-                            Below are my current skills, majority of which I have learned in my spare time working on personal projects.
+                            Below are my current skills, majority of which I have learned in my spare time working on personal projects. So i'm always
+                            open to learning new languages and improving my skillset.
                         </div>
                         <div class="row-fluid">
                             <div class="span4">
                                 <h3>Languages</h3>
                                 <ul>
-                                    <li>PHP
+                                    <li>PHP <i class="icon-heart"></i>
                                     <li>MySQL
                                     <li>HTML
                                     <li>CSS
-                                    <li>JavaScript
+                                    <li>JavaScript <i class="icon-heart"></i>
                                     <li>LUA
                                     <li>Ruby
                                     <li>Java
@@ -120,7 +124,7 @@
                                     <li>CakePHP <i class="icon-heart"></i>
                                     <li>jQuery <i class="icon-heart"></i>
                                     <li>LESS
-                                    <li>NodeJS
+                                    <li>NodeJS <i class="icon-heart"></i>
                                     <li>Backbone.js
                                     <li>Bootstrap
                                     <li>Corona SDK
@@ -144,23 +148,22 @@
 
             <div id="sys-admin" class="step slide" data-x="6000" data-y="0">
                 <div class="page-header">
-                    <h1>System Administration</h1>
+                    <h1>Dev with system skillz (l33t l1nux)</h1>
                 </div>
                 <div class="row-fluid">
-                    <div class="span8">
+                    <div class="span12">
                         <p>
-                            Along with developing for the web I gained a large interest in knowing 
-                            the hardware and systems that power the web. From Apace, MySQL, Linux, 
-                            load-balancing, frontend-servers, rack management, MySQL replication to SSL certificates
-                            I enjoy every bit of it. I currently have two Linux servers at home. One hosting this site
-                            then a <a href="http://www.raspberrypi.org/" target="blank">Raspberry Pi</a> for tinkering 
-                            and home security, so watch out!
+                            <div class="well pull-right"> 
+                                $ rm -rf /  :(
+                            </div>
+                            When hired on at <a href="http://bondware.com">Bondware</a> I
+                            was given a unique opportunity to administrate the servers (15 total) as well 
+                            as <a href="http://en.wikipedia.org/wiki/DevOps">dev ops</a>. My workflow
+                            started with the core code to the scripts that package releases and everything in between.
+                            One of the heart pounding system admin moments i've had was swapping out a live production
+                            server for <a href="http://renderosity.com">Renderosity</a> which serves thousands
+                            of users at any given time.
                         </p>
-                    </div>
-                    <div class="span4">
-                        <div class="thumbnail">
-                            <img src="/img/raspi-array.jpg" alt="Raspberry Pi Array" />
-                        </div>
                     </div>
                 </div>
             </div>
@@ -176,11 +179,15 @@
                         </div>
                         <div class="row-fluid">
                             <div class="span12">
-                                Blurb here
+                                Created by a co-worker and I this simple drag n' drop website builder is as easy as using 
+                                PowerPoint. Express is based almost entirely on the client side (jQuery) with a thin back-end (PHP)
+                                for sessions/saving/etc.
                             </div>
                             <div class="span12">
                                 <div class="thumbnail">
-                                    <img src="/img/express.png" alt="Express Website Builder" />
+                                    <a href="http://www.bondware.com/easy-website-builder---express-cms-615">
+                                        <img src="/img/express.png" alt="Express Website Builder" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -198,12 +205,10 @@
                             <h1>Renderosity Chat</h1>
                         </div>
                         <div class="row-fluid">
-                            <div class="span4">
-                                <a href="http://chat.renderosity.com" class="thumbnail">
+                            <div class="span12">
+                                <a href="http://chat.renderosity.com" class="thumbnail pull-left" style="width: 200px;margin-right:10px;">
                                     <img src="/img/rr-chat.png" alt="Renderosity Chat" />
                                 </a>
-                            </div>
-                            <div class="span8">
                                 Perhaps my favorite project, I solely designed and implemented a chat
                                 for Renderosity, a community driven 3D graphics website. Relying on <a href="http://nodejs.org/">NodeJS</a>
                                 and jQuery this application provides the community with realtime communications handled completely in the browser.
@@ -217,30 +222,77 @@
                 </div>
             </div>
 
-            <div id="solarsystem" class="step slide" data-x="10000" data-y="0">
+            <div id="personal-projects" class="step slide" data-x="10000" data-y="0">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="page-header">
+                            <h1>Personal Projects</h1>
+                        </div>
+                        <p>
+                            I have three categories of hobbies that keep me occupied and learning in my spare time.
+                            First is software projects such as websites, and mobile games. After that I dabble in hardware
+                            projects using my <a href="http://www.raspberrypi.org/">Raspberry Pi</a> and <a href="http://www.arduino.cc/">Arduino</a> 
+                            to setup cool sensors, alarms, webcams, etc.
+                            Finally if a new game just came out or I don't have much to do i'll hop online and play games with my friends.
+                            Some of my favorite games would be the <a href="http://www.battlefield.com/">Battlefield series</a>, 
+                            <a href="http://minecraft.net/">Minecraft</a>, and <a href="http://www.valvesoftware.com/">Valve games</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="solarsystem" class="step slide" data-x="12000" data-y="0">
                 <iframe src="/solarsystem"></iframe>
                 <div class="row-fluid">
                     <div class="offset6 span6">
+                        <div class="page-header">
+                            <h1>Solar Commander</h1>
+                        </div>
                         <p>
-                            Testing some text
+                            This was an early attempt at one of my mobile games initally using WebGL.
+                            I have since migrated to <a href="">Corona SDK</a>. Below is a video of the 
+                            game in early development.
                         </p>
+                        <div class="row">
+                            <div class="span12">
+                                <video class="solar-commander-video" width="256" height="500" controls>
+                                    <source src="video/solar-commander-pre-alpha.mp4" type="video/mp4" />
+                                    <source src="video/solar-commander-pre-alpha.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div id="guestbook" class="step slide" data-x="0" data-y="1000">
                 <div class="row-fluid">
-                    <div class="span12">
-                        <h1>Guestbook</h1>
-                    </div>
-                </div>
-                <div class="row-fluid">
                     <div class="span6">
-
+                        <div class="page-header">
+                            <h1>Guestbook</h1>
+                        </div>
+                        <div class="guest-post">
+                            <div class="guest-img pull-left">
+                                <img src="img/guests/testing.jpg" alt="guest name" />
+                            </div>
+                            <div class="guest-name">Testing Name</div>
+                            <div class="guest-date">August 4th, 2013</div>
+                            <div class="guest-comment">Hi there this is a test of the emergency broadcast system</div>
+                        </div>
                     </div>
-                    <div class="span6">
-                        <video width="640" height="480" autoplay></video>
-                        <button class="snap btn">Snap Photo</button>
+                    <div class="span6" style="text-align: center">
+                        <div class="guest-video-wrapper">
+                            <div class="video-underlay">
+                                Click below to activate the camera, <br />
+                                then you must allow the browser <br />
+                                to access your webcam
+                            </div>
+                            <video id="guest-video" width="400" height="320" autoplay>
+                                Your browser does not support the video tag. 
+                            </video>
+                        </div>
+                        <a id="guest-snap" href="#" class="btn btn-large">Activate Camera</a>
                     </div>
                 </div>
             </div>
@@ -273,6 +325,38 @@
         </div>
         <div class="hint">
             <p>Use a spacebar or arrow keys to navigate</p>
+        </div>
+        <div id="guest-modal" class="modal hide fade">
+            <form class="form-horizontal" action="php/guest-post.php" method="POST" style="margin-bottom: 0">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Modal header</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="control-group">
+                        <label class="control-label">Preview</label>
+                        <div class="controls">
+                            <canvas id="guest-preview" width="220" height="176"></canvas>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Name</label>
+                        <div class="controls">
+                            <input type="text" name="guest-name" placeholder="Your Name" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Message</label>
+                        <div class="controls">
+                            <textarea name="guest-msg" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </div>
+            </form>
         </div>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
